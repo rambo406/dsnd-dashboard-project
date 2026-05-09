@@ -113,7 +113,7 @@ class Report(CombinedComponent):
     children = [Header(), DashboardFilters(), Visualizations(), NotesTable()]
 
 
-app, rt = fast_app(hdrs=[Link(rel='stylesheet', href='/assets/report.css')])
+app, rt = fast_app(hdrs=[Link(rel='stylesheet', href='/assets/report.css')], static_path='..')
 
 report = Report()
 
